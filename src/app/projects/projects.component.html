@@ -7,12 +7,15 @@
         <img
           src="{{ item.pic_url }}"
           alt="Profile Picture"
-          class="rounded-lg w-sm h-48 md:w-md md:h-64 w-fit shadow-lg animate-fadeIn"
+          class="rounded-lg h-48 md:w-md md:h-64 w-fit shadow-lg animate-fadeIn"
         />
         <div>
           <h3 class="text-xl font-semibold mb-2">{{ item.title }}</h3>
           <p class="text-gray-600 mb-4">{{ item.description }}</p>
-          <a href="{{ item.website_url }}" class="text-blue-600 hover:underline"
+          <a
+            target="_blank"
+            href="{{ item.website_url }}"
+            class="text-blue-600 hover:underline"
             >View Project</a
           >
         </div>

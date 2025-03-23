@@ -1,0 +1,15 @@
+#banner {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background: black;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  visibility: hidden;
+  opacity: 0;
+}
