@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
+import { CardComponent } from '../component/card/card.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  standalone: true,
+  imports: [CardComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
   projects = [{
     title: 'BOOKMYPLOTS',
-    description: 'Real Estate Platform with Solid.js and AWS.',
+    description: 'BookMyPlots is a real estate platform aimed at enhancing the property buying and selling experience. As a Full Stack Developer, I was responsible for designing and maintaining the server-side logic and database architecture, ensuring seamless integration with front-end applications.',
     tech_stack: 'Solid.js, Astro.js, AWS, Serverless APIs',
-    pic_url: 'https://bookmyplots.co/_image?href=%2F_astro%2FLastlogo.Df4UdYCL.png&f=webp',
+    pic_url: 'https://bookmyplots.co/favicon.svg',
     website_url: 'https://bookmyplots.co/',
     github_url: ''
   }, 
@@ -27,7 +29,7 @@ export class ProjectsComponent {
     title: 'insta',
     description: 'This application allows easy downloading of Instagram posts, reels, stories, YouTube videos, and shorts. It also includes features for viewing and downloading WhatsApp statuses and Instagram profiles.',
     tech_stack: '',
-    pic_url: 'https://private-user-images.githubusercontent.com/117622182/276852499-344ddc66-45cc-49c6-bfef-0457f4908ccf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgzMTQzODgsIm5iZiI6MTczODMxNDA4OCwicGF0aCI6Ii8xMTc2MjIxODIvMjc2ODUyNDk5LTM0NGRkYzY2LTQ1Y2MtNDljNi1iZmVmLTA0NTdmNDkwOGNjZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEzMVQwOTAxMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MzhjMWRlZjRjZDYzYjY1NmM2NTEzZDhiZDc1NThjOGUzNzdhZDQ3MTMzYmUzYjI4MzVmOGZkOTdkMjA2MjI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.HeQiL39KmZyJeq6ArBvVPCzK-fTF7lOSe6drLk4uEUU',
+    pic_url: 'https://gopi2401.github.io/insta/assets/mobile2.CrsY5oVg_20x5FC.webp',
     website_url: 'https://gopi2401.github.io/insta/',
     github_url: 'https://github.com/gopi2401/insta/'
   }, {
@@ -38,10 +40,10 @@ export class ProjectsComponent {
     website_url: 'https://www.npmjs.com/package/insta-package',
     github_url: 'https://github.com/gopi2401/insta-package'
   }, {
-    title: 'Company website clone (equestsolutions)',
-    description: '',
+    title: 'IT website clone (equestsolutions)',
+    description: 'Cloned a professional IT company website to practice responsive web design and layout structuring. The site includes multiple sections such as Home, About, Services, Careers, and Contact-all styled to closely match a real-world corporate site.',
     tech_stack: '',
-    pic_url: '',
+    pic_url: 'https://gopi2401.github.io/equestsolutions/assets/hero_laptop_man_woman.B4RaJdby_ZFG1aC.svg',
     website_url: 'https://gopi2401.github.io/equestsolutions',
     github_url: 'https://github.com/gopi2401/equestsolutions'
   }, {
@@ -51,5 +53,13 @@ export class ProjectsComponent {
     pic_url: 'https://gopi2401.github.io/instagram-background-music-pack-(1)/image.jpg',
     website_url: 'https://gopi2401.github.io/Instagram-Background-Music/',
     github_url: 'https://github.com/gopi2401/Instagram-Background-Music'
+  },
+   {
+    title: 'Restaurant Dashboard',
+    description: 'Developed a comprehensive Restaurant Management Dashboard to help restaurant owners and staff manage daily operations efficiently through a centralized platform.',
+    tech_stack: 'angular, express.js',
+    pic_url: 'https://gopi2401.github.io/restaurant/icons/icon_512.png',
+    website_url: 'https://gopi2401.github.io/restaurant/',
+    github_url: 'https://github.com/gopi2401/restaurant'
   }]
 }
