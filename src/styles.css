@@ -19,3 +19,5 @@
 app-card {
   @apply relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md;
 }
+
+/* https://www.uiverse.io/MikeAndrewDesigner/fast-octopus-78 */
