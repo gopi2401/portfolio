@@ -15,16 +15,18 @@
     {{ item.title }}
   </h5>
   <p
-    id="para"
-    class="font-sans text-base font-light leading-relaxed text-inherit overflow-hidden transition-all duration-300 line-clamp-3 antialiased"
+    [class]="
+      (expanded ? '' : 'line-clamp-3') +
+      ' font-sans text-base font-light leading-relaxed text-inherit overflow-hidden transition-all duration-300 ease-in-out antialiased'
+    "
   >
     {{ item.description }}
   </p>
   <button
-    (click)="toggleParagraph()"
+    (click)="expanded = !expanded"
     class="mt-2 text-blue-500 hover:underline focus:outline-none"
   >
-    <span id="toggleBtnText">View More</span>
+    <span>{{ this.expanded ? "View Less" : "View More" }}</span>
   </button>
 </div>
 <div class="p-6 pt-0">
