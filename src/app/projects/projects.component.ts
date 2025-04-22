@@ -50,7 +50,7 @@ export class ProjectsComponent {
     title: 'Instagram-Background-Music',
     description: 'Instagram trending reels background music',
     tech_stack: 'react',
-    pic_url: 'https://gopi2401.github.io/instagram-background-music-pack-(1)/image.jpg',
+    pic_url: 'https://gopi2401.github.io/Instagram-Background-Music/image.jpg',
     website_url: 'https://gopi2401.github.io/Instagram-Background-Music/',
     github_url: 'https://github.com/gopi2401/Instagram-Background-Music'
   },
