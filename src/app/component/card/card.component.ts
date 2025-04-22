@@ -10,6 +10,4 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 export class CardComponent {
   @Input() item: any
    expanded = false;
-
-
 }
