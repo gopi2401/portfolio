@@ -7,10 +7,11 @@ import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
 import { AboutComponent } from "./about/about.component";
 import { ExperienceComponent } from "./experience/experience.component";
+import { ToastComponent } from "./component/toast/toast.component";
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, HeroComponent, SkillsComponent, ProjectsComponent, ContactComponent, FooterComponent, AboutComponent],
+  imports: [HeaderComponent, HeroComponent, SkillsComponent, ProjectsComponent, ContactComponent, FooterComponent, AboutComponent, ToastComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

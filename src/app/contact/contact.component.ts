@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { environment } from '../../environments/environment';
+import { ToastService } from '../toast.service';
 @Component({
   selector: 'app-contact',
   imports: [],
@@ -9,6 +10,15 @@ import { environment } from '../../environments/environment';
 })
 export class ContactComponent {
 
+  constructor(public toastService: ToastService) {}
+
+  showToast(msg: string) {
+    this.toastService.add(msg);
+    setTimeout(() => {
+      this.toastService.remove(0);
+    }
+    , 4000); // Remove the toast after 3 seconds
+  }
 
   public sendEmail(e: Event) {
     e.preventDefault();
@@ -19,7 +29,7 @@ export class ContactComponent {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          this.showToast('Email sent successfully!');
           if (e.target) {
             (e.target as HTMLFormElement).reset();
           }
