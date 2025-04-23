@@ -13,7 +13,7 @@ export class ProjectsComponent {
     title: 'BOOKMYPLOTS',
     description: 'BookMyPlots is a real estate platform aimed at enhancing the property buying and selling experience. As a Full Stack Developer, I was responsible for designing and maintaining the server-side logic and database architecture, ensuring seamless integration with front-end applications.',
     tech_stack: 'Solid.js, Astro.js, AWS, Serverless APIs',
-    pic_url: 'https://bookmyplots.co/favicon.svg',
+    pic_url: '/project/bookmyplots.svg',
     website_url: 'https://bookmyplots.co/',
     github_url: ''
   }, 
@@ -36,7 +36,7 @@ export class ProjectsComponent {
     title: 'insta-package (npm package)',
     description: 'This Node.js package provides a simple and efficient way to download media from Instagram. Whether you need to download images, videos, or stories, this package makes it easy with minimal setup. Designed for developers, this package supports various media formats and ensures quick downloads, making it perfect for both personal use and larger projects. With straightforward API calls, you can integrate Instagram media downloading functionality into your applications effortlessly.',
     tech_stack: 'JavaScript',
-    pic_url: 'https://img-c.udemycdn.com/course/240x135/2707188_7e44.jpg',
+    pic_url: '/project/2707188_7e44.webp',
     website_url: 'https://www.npmjs.com/package/insta-package',
     github_url: 'https://github.com/gopi2401/insta-package'
   }, {
@@ -50,7 +50,7 @@ export class ProjectsComponent {
     title: 'Instagram-Background-Music',
     description: 'Instagram trending reels background music',
     tech_stack: 'react',
-    pic_url: 'https://gopi2401.github.io/Instagram-Background-Music/image.jpg',
+    pic_url: '/project/image.webp',
     website_url: 'https://gopi2401.github.io/Instagram-Background-Music/',
     github_url: 'https://github.com/gopi2401/Instagram-Background-Music'
   },
